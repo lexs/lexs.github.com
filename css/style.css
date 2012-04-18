@@ -75,10 +75,11 @@
 	}
 
     #main .social a:hover { opacity: 1.0; }
-    #main .social .twitter { background-image:url(/img/twi.png); }
-    #main .social .facebook { background-image:url(/img/fb.png); }
-    #main .social .linkedin { background-image:url(/img/lin.png); }
-	#main .social .google { background-image:url(/img/go.png); }
+    #main .social .twitter { background-image:url(/img/twitter.png); }
+    #main .social .facebook { background-image:url(/img/facebook.png); }
+    #main .social .linkedin { background-image:url(/img/linkedin.png); }
+	#main .social .google { background-image:url(/img/google.png); }
+    #main .social .github { background-image:url(/img/github.png); }
    
     footer  {
         margin-top: 70px;
