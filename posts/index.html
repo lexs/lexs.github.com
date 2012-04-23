@@ -14,10 +14,10 @@ feed: true
     {% if forloop.first %}
       <h2>{{this_year}}</h2>
       <h3>{{this_month}}</h3>
-      <ul>
+      <ul itemprop="blogPosts">
     {% endif %}
   
-    <li itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+    <li itemscope itemtype="http://schema.org/BlogPosting">
       <time pubdate datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   
