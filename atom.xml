@@ -14,7 +14,7 @@
 
   {% for post in site.posts limit:5 %}
   <entry>
-    <id>{{ post.id }}</id>
+    <id>{{ site.url }}{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
