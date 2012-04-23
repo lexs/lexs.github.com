@@ -1,97 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		
-		<title>Alexander Blom</title>
+---
+layout: default
+feed: true
+index: true
+---
 
-        <meta name="description" content="Personal web site of Alexander Blom, Android developer.">
-        <meta name="author" content="Alexander Blom">
-		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> 
-        <link href='http://fonts.googleapis.com/css?family=Kreon|Arvo' rel='stylesheet' type='text/css'> 
+<div class="about-me">
+	I'm currently studying Computer Science at <a itemprop="affiliation" href="http://www.kth.se/">Royal Institute of Technology (KTH)</a> in 
+	<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+		<span itemprop="locality">Stockholm</span>, <span itemprop="country-name">Sweden</span>.
+	</span>
+	I enjoy all programming but is currently focused on web and developing Android applications. <!--I also run a <a href="/posts/">blog</a>.-->
+</div>
 
-		<script type="text/javascript">
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-258461-10']);
-		  _gaq.push(['_trackPageview']);
+<div class="projects list">
+	<h3>Android projects</h3>
+	<ul>
+		<li><a href="https://play.google.com/store/apps/details?id=se.alexanderblom.books">Android Book Club</a>, an Android application for discovering books.</li>
+		<li><a href="https://play.google.com/store/apps/details?id=se.alexanderblom.gmailunreadcount2">Gmail Unread Count</a>, a home screen widget displaying unread email count.</li>
+	</ul>
 
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-		</script>
-    </head>
+	<h3>Android contributions (AOSP)</h3>
+	<ul>
+		<li><a href="https://android-review.googlesource.com/#/c/32100/">Change Icb957127</a>: Use name and number for SMS delivery reports.</li>
+	</ul>
 
-    <body>
-        <div id="container" itemscope itemtype="http://data-vocabulary.org/Person">
-            <header>
-                Hi, my name is...
-                <h1 itemprop="name">Alexander Blom</h1>
-            </header>
+	<h3>Web</h3>
+	<ul>
+		<li><a href="http://www.imig.io/">imig.io</a>, smaller project to collect nice images and videos.</li>
+	</ul>
+</div>
 
-            <div id="main">
-                <div class="about-me">
-					I'm currently studying Computer Science at <a itemprop="affiliation" href="http://www.kth.se/">Royal Institute of Technology (KTH)</a> in 
-					<span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-						<span itemprop="locality">Stockholm</span>, <span itemprop="country-name">Sweden</span>.
-					</span>
-					I enjoy all programming but is currently focused on web and developing Android applications.
-				</div>
+<!--<div class="blog list" itemscope itemtype="http://schema.org/Blog">
+	<h3>Blog</h3>
+	<ul>
+		{% for post in site.posts limit:5 %}
+		<li itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+			<a href="{{ post.url }}">{{ post.title }}</a> - <time pubdate datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+		</li>
+		{% endfor %}
+	</ul>
+</div>-->
 
-                <div class="projects">
-					<h2>Android projects</h2>
-					<ul>
-						<li><a href="https://play.google.com/store/apps/details?id=se.alexanderblom.books">Android Book Club</a>, an Android application for discovering books.</li>
-						<li><a href="https://play.google.com/store/apps/details?id=se.alexanderblom.gmailunreadcount2">Gmail Unread Count</a>, a home screen widget displaying unread email count.</li>
-					</ul>
+<div class="social">
+		You can find me at these places:
+	<ul>
+		<li><a class="google" href="http://www.google.com/profiles/alexvem" rel="me" title="Google">Google</a></li>
+		<li><a class="facebook" href="http://www.facebook.com/alexanderblom" rel="me" title="Facebook">Facebook</a></li>
+			<li><a class="twitter" href="http://twitter.com/blomalexander" rel="me" title="Twitter">Twitter</a></li>
+		<li><a class="linkedin" href="http://www.linkedin.com/in/blomalexander" rel="me" title="LinkedIn">LinkedIn</a></li>
+		<li><a class="github" href="https://github.com/lexs" rel="me" title="GitHub">GitHub</a></li>
+	</ul>
+</div>
 
-					<h2>Android contributions (AOSP)</h2>
-					<ul>
-						<li><a href="https://android-review.googlesource.com/#/c/32100/">Change Icb957127</a>: Use name and number for SMS delivery reports.</li>
-					</ul>
-
-					<h2>Web</h2>
-					<ul>
-						<li><a href="http://www.imig.io/">imig.io</a>, smaller project to collect nice images and videos.</li>
-					</ul>
-				</div>
-
-                <div class="social">
-						You can find me at these places:
-					<ul>
-						<li><a class="google" href="http://www.google.com/profiles/alexvem" title="Google">Google</a></li>
-						<li><a class="facebook" href="http://www.facebook.com/alexanderblom" title="Facebook">Facebook</a></li>
- 						<li><a class="twitter" href="http://twitter.com/blomalexander" title="Twitter">Twitter</a></li>
-						<li><a class="linkedin" href="http://www.linkedin.com/in/blomalexander" title="LinkedIn">LinkedIn</a></li>
-						<li><a class="github" href="https://github.com/lexs" title="GitHub">GitHub</a></li>
-					</ul>
-				</div>
-			</div>
-			
-			<footer>
-				Contact me! - 
-				<script type="text/javascript">
-				//<![CDATA[
-				<!--
-				var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
-				"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
-				" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!05{)rt{y+xx=l;=+;" +
-				"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
-				"\"(3),5\\\"\\\\u}77\\\\1j\\\\7`17\\\\\\\\0!02\\\\\\\\02\\\\0P\\\\XS24\\\\0U" +
-				"\\\\VQR[^tGWJHLB22\\\\0t\\\\\\\\\\\\3v01\\\\\\\\2t03\\\\\\\\ICJP1V00\\\\\\\\"+
-				"02\\\\0C\\\\tp9zzybpKjbd{s2d02\\\\\\\\35\\\\0@\\\\27\\\\02\\\\00\\\\\\\\30\\"+
-				"\\03\\\\03\\\\\\\\21\\\\03\\\\00\\\\\\\\6N0U00\\\\\\\\01\\\\00\\\\02\\\\\\\\"+
-				"10\\\\0~\\\\f=~z>::58%h?,0S%YIRW\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx" +
-				".e(odrChamCro.fngriSt+=;o27=1y%+;y+3)<5(iif){++;i<l;i=0(ior;fthnglex.l=\\\\" +
-				",\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                               ;
-				while(x=eval(x));
-				//-->
-				//]]>
-				</script>
-			</footer>
-			
-        </div>
-    </body>
-</html>
+<div class="contact">
+	Contact me! - 
+	<script type="text/javascript">
+	//<![CDATA[
+	<!--
+	var x="function f(x){var i,o=\"\",l=x.length;for(i=0;i<l;i+=2) {if(i+1<l)o+=" +
+	"x.charAt(i+1);try{o+=x.charAt(i);}catch(e){}}return o;}f(\"ufcnitnof x({)av" +
+	" r,i=o\\\"\\\"o,=l.xelgnhtl,o=;lhwli(e.xhcraoCedtAl(1/)3=!05{)rt{y+xx=l;=+;" +
+	"lc}tahce({)}}of(r=i-l;1>i0=i;--{)+ox=c.ahAr(t)i};erutnro s.buts(r,0lo;)f}\\" +
+	"\"(3),5\\\"\\\\u}77\\\\1j\\\\7`17\\\\\\\\0!02\\\\\\\\02\\\\0P\\\\XS24\\\\0U" +
+	"\\\\VQR[^tGWJHLB22\\\\0t\\\\\\\\\\\\3v01\\\\\\\\2t03\\\\\\\\ICJP1V00\\\\\\\\"+
+	"02\\\\0C\\\\tp9zzybpKjbd{s2d02\\\\\\\\35\\\\0@\\\\27\\\\02\\\\00\\\\\\\\30\\"+
+	"\\03\\\\03\\\\\\\\21\\\\03\\\\00\\\\\\\\6N0U00\\\\\\\\01\\\\00\\\\02\\\\\\\\"+
+	"10\\\\0~\\\\f=~z>::58%h?,0S%YIRW\\\"\\\\f(;} ornture;}))++(y)^(iAtdeCoarchx" +
+	".e(odrChamCro.fngriSt+=;o27=1y%+;y+3)<5(iif){++;i<l;i=0(ior;fthnglex.l=\\\\" +
+	",\\\\\\\"=\\\",o iar{vy)x,f(n ioctun\\\"f)\")"                               ;
+	while(x=eval(x));
+	//-->
+	//]]>
+	</script>
+</div>

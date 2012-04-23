@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		
+		<title>{% if page.title %}{{ page.title }} | {% endif %}Alexander Blom</title>
+
+        <meta name="description" content="Personal web site of Alexander Blom, Android developer.">
+        <meta name="author" content="Alexander Blom">
+		<link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
+        <link href='http://fonts.googleapis.com/css?family=Kreon|Arvo' rel='stylesheet' type='text/css'>
+        {% if page.feed %}
+        <!--<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Blog feed" />-->
+        {% endif %}
+
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-258461-10']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+    </head>
+
+    <body>
+		<div id="container" {% if page.index %}itemscope itemtype="http://data-vocabulary.org/Person"{% endif %}>
+		    <header class="site-header">
+		    	Hi, my name is...
+		        <div>
+		        	<a href="/"><h1 itemprop="name">Alexander Blom</h1></a>
+		        	{% if page.subtitle %}
+		        	<a href="{{ page.subtitle_link }}" class="subtitle">{{ page.subtitle }}</a>
+		        	{% endif %}
+		    	</div>
+		    </header>
+
+		    <section id="main">
+				{{ content }}
+			</section>
+		</div>
+    </body>
+</html>

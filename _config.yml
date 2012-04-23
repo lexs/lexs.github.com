@@ -1,0 +1,14 @@
+server: true
+auto: true
+safe: true
+pygments: true
+
+permalink: /:year/:month/:day/:title/
+
+markdown: rdiscount
+rdiscount:
+    extensions: [smart, autolink]
+
+author: Alexander Blom
+url: http://alexanderblom.se
+#url: http://localhost:4000
