@@ -17,14 +17,16 @@ A problem that is common for iOS adaptations is that the back button can be used
 
 > Changing view options for a screen does not change the behavior of Up or Back: the screen is still in the same place within the app's hierarchy, and no new navigation history is created.
 
-Spotify, Facebook and Instagram all fail here. Spotify and Facebook use the pattern above while Instagram sticks with tabs but still manages to get it wrong.
+Spotify, Facebook and Instagram all fail here in different ways. Spotify and Facebook use the pattern above but does not make it clear to the user how it affects the back stack. They simply push the selected view on top without any animation. This leads to a continuously expanding activity stack making it awkward to navigate back. Instagram on the other hand uses tabs but still pushes the views on the stack instead of replacing them.
 
-The guidelines mention using a spinner in the action bar for this kind of navigation. This is exactly what the platform apps do (Gmail, Calendar and others).
+The guidelines suggest using a spinner for this kind of navigation (aka collapsed tabs). This is what most of the platform apps do, for example Gmail, Calendar and Maps. What is not clear though is how the back stack should be treated.
 
 ![Gmail]({{ site.url }}/images/android-gmail.jpeg)
-![Calendar]({{ site.url }}/images/android-calendar.png)
+![Maps]({{ site.url }}/images/android-maps.png)
 
-Spotify could easily adopt this pattern. Search and settings should go in the regular action area leaving four items, which is less than Gmail has. Facebook has more items but could show the most common like Gmail does with *"Show all labels"*. The back button should also not go back to the last recent view but navigate up in the hierarchy.
+But given how it's implemented in Gmail vs Maps, it's pretty clear how it should be handled. In Gmail the mail list is the starting point of the app, the views in the spinner filter this list but it's still a list of mails. Maps on the other hand uses the spinner for different views, much like Spotify. It still pushes views on the stack but when the user selects the main entry point, "Map" here, they clear the back stack and return to the first view. Tapping back will not exist the app.
+
+Spotify could easily adopt the pattern used by Maps by using a spinner and clearing the back stack when "Playlists" is selected. Search and settings should go in the regular action area leaving four items, which is less than Maps has. Facebook has more items but could show the most common like Gmail does with *"Show all labels"*. They should also provide animations for showing the user how this affects the back stack, this chould be done by using simply using activities.
 
 **Interesting remark:** Spotify uses the Action Bar compatibility [sample](http://developer.android.com/resources/samples/ActionBarCompat/index.html) provided by Google instead of the more powerful [ActionBarSherlock](http://actionbarsherlock.com/).
 
