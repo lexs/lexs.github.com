@@ -34,9 +34,6 @@
     a {
         text-decoration: none;
         color: #FF4059;
-        //-webkit-transition: text-shadow 0.15s ease;
-        //-moz-transition: text-shadow 0.15s ease;
-        transition: text-shadow 0.15s ease;
     }
 	
 	a:hover { color: #00D486; }
@@ -78,7 +75,6 @@
     h3 {
         font-family: 'Arvo', serif;
         font-size: 17px;
-		
 		margin: 10px 0 5px 0;
         color: #616161;
 		text-decoration:underline;
@@ -87,9 +83,6 @@
     h2 a {
         text-decoration: inherit;
         color: inherit;
-        //-webkit-transition: text-shadow 0.15s ease;
-        //-moz-transition: text-shadow 0.15s ease;
-        transition: inherit;
     }
 
     h1 .extra {
@@ -99,7 +92,6 @@
     #container {
         position: relative;
         margin: 30px 0 0 60px;
-       
     }
 
     #main {
@@ -108,7 +100,7 @@
 
    	#main .about-me {margin: 20px 0 30px 0;}
 
-    .list { color: #808080; margin-bottom:30px; }
+    .list { margin-bottom:30px; }
     .list a { font-size: 17px; }
     .list li { list-style: none; }
 
