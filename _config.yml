@@ -5,6 +5,7 @@ pygments: true
 
 permalink: /:year/:month/:day/:title/
 
+#markdown: redcarpet
 markdown: rdiscount
 rdiscount:
     extensions: [smart, autolink]
