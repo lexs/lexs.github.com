@@ -166,8 +166,9 @@
         border-radius: 3px;
     }
 
-    article aside {
-        margin-top: 10px;
+    article .author {
+        text-decoration: inherit;
+        color: inherit;
     }
 
     article .comments {
