@@ -114,7 +114,7 @@
         opacity: 0.4;
 	}
     .social a:hover { opacity: 1.0; }
-    
+
     .social .google { background: url(/img/all.png) 0 0; }
     .social .facebook { background: url(/img/all.png) -32px 0; }
     .social .twitter { background: url(/img/all.png) -64px 0; }
@@ -159,11 +159,14 @@
     article pre {
         background-color: #F8F8F8;
         border: 1px solid #CCC;
-        font-size: 13px;
-        line-height: 19px;
+        font: 12px 'Bitstream Vera Sans Mono', 'Courier', monospace;
+        line-height: 16px;
         overflow: auto;
         padding: 6px 10px;
-        border-radius: 3px;
+    }
+
+    article code {
+
     }
 
     article .author {
