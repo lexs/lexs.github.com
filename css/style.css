@@ -104,22 +104,22 @@
     .list a { font-size: 17px; }
     .list li { list-style: none; }
 
-    #main .social ul { margin: 20px 0 0 -20px; list-style: none; }
-    #main .social li { margin-left:20px; float:left; }
-    #main .social a {
+    .social ul { margin: 20px 0 0 -20px; list-style: none; }
+    .social li { margin-left:20px; float:left; }
+    .social a {
         display:block;
         width:32px;
         height:32px;
         text-indent:-9999px;
         opacity: 0.4;
 	}
-
-    #main .social a:hover { opacity: 1.0; }
-    #main .social .twitter { background-image:url(/img/twitter.png); }
-    #main .social .facebook { background-image:url(/img/facebook.png); }
-    #main .social .linkedin { background-image:url(/img/linkedin.png); }
-	#main .social .google { background-image:url(/img/google.png); }
-    #main .social .github { background-image:url(/img/github.png); }
+    .social a:hover { opacity: 1.0; }
+    
+    .social .google { background: url(/img/all.png) 0 0; }
+    .social .facebook { background: url(/img/all.png) -32px 0; }
+    .social .twitter { background: url(/img/all.png) -64px 0; }
+    .social .linkedin { background: url(/img/all.png) -96px 0; }
+    .social .github { background: url(/img/all.png) -128px 0; }
 
     .contact  {
         margin-top: 70px;
