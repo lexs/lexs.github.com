@@ -10,6 +10,7 @@ layout: blog
 	{{ content }}
 	</section>
 	<footer>
+		<meta itemprop="wordCount" content="{{ page.content | number_of_words }}" />
 		Posted by <a href="/" class="author" rel="author">{{ site.author }}</a>
 
 		{% if page.comments %}
