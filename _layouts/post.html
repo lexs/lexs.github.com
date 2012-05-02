@@ -4,7 +4,7 @@ layout: blog
 <article itemscope itemtype="http://schema.org/BlogPosting">
 	<header>
 		<h2 itemprop="headline"><a href="{{ page.url }}">{{ page.title }}</a></h2>
-		<time pubdate datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %d, %Y" }}</time>
+		<time datetime="{{ page.date | date: "%Y-%m-%d" }}" pubdate>{{ page.date | date: "%B %d, %Y" }}</time>
 	</header>
 	<section itemprop="articleBody">
 	{{ content }}

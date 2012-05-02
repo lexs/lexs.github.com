@@ -33,7 +33,7 @@
 		    <header class="site-header">
 		    	Hi, my name is...
 		        <div>
-		        	<h1 itemprop="name"><a href="/">Alexander Blom</a></h1>
+		        	<h1{% if page.index %} itemprop="name"{% endif %}><a href="/">Alexander Blom</a></h1>
 		        	{% if page.subtitle %}
 		        	<a href="{{ page.subtitle_link }}" class="subtitle">{{ page.subtitle }}</a>
 		        	{% endif %}
