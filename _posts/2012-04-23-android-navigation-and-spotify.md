@@ -31,3 +31,5 @@ Spotify could easily adopt the pattern used by Maps by using a spinner and clear
 **Interesting remark:** Spotify uses the Action Bar compatibility [sample](http://developer.android.com/resources/samples/ActionBarCompat/index.html) provided by Google instead of the more powerful [ActionBarSherlock](http://actionbarsherlock.com/).
 
 In conclusion: Spotify and others, please switch to a spinner for view navigation.
+
+**UPDATE:** I wrote a new [blog post](/2012/06/01/slide-out-navigation-done-better/) which details another implementation of the sliding menu.
