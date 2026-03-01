@@ -11,5 +11,4 @@ rdiscount:
     extensions: [smart, autolink]
 
 author: Alexander Blom
-url: http://alexanderblom.se
 #url: http://localhost:4000
